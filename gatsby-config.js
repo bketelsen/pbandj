@@ -2,8 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'The PB&J Show',
     author: 'bketelsen',
-    authorLink: 'https://github.com/bketelsen/pbandj',
-    disqus: 'bketelsen'// put your disqus ID here
+    authorLink: 'https://github.com/bketelsen/pbandj'
   },
   plugins: [
     {
