@@ -18,7 +18,7 @@ export default function Template ({ data }) {
   return (
     <Layout>
       <div>
-        <Helmet title={`Blog | ${post.frontmatter.title}`}>
+        <Helmet title={`Episode | ${post.frontmatter.title}`}>
           {data.site.siteMetadata.disqus && (
             <script id='dsq-count-scr' src='//gatsby-starter-blog.disqus.com/count.js' async />
           )}
@@ -69,7 +69,7 @@ export default function Template ({ data }) {
 }
 
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query ShowByPath($path: String!) {
     site {
       siteMetadata {
         disqus
