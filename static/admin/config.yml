@@ -31,23 +31,6 @@ collections:
           widget: "list",
           fields: [{ name: "filename", label: "Filename", widget: "file" }],
         }
-      - {
-          label: "Related Post",
-          name: "related",
-          required: false,
-          widget: "list",
-          fields:
-            [
-              {
-                name: "episode",
-                label: "Episode",
-                widget: "relation",
-                collection: "show",
-                searchFields: [name, path, title],
-                valueField: path,
-              },
-            ],
-        }
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
